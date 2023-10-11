@@ -1,0 +1,41 @@
+// Scss variables
+$body-background-color: #1a1a1a;
+$bright-color: #ff6600;
+$ads-color: #6f6f6f;
+$separator-color: #464646;
+$header-main-nav-color: #2d1402;
+$header-third-nav-background-color: #151515;
+$ads-background-color: #151515;
+$like-share-color: #1a1a1a;
+$footer-background-color: #030303;
+$footer-end-links-color: rgba(255, 102, 0, 0.66);
+$footer-end-links-color-hover: #ff6600;
+$footer-copyright-color: rgba(128, 128, 128, 0.72);
+$footer-copyright-color-hover: #808080;
+// General base
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Plus Jakarta Sans";
+  background-color: $body-background-color;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+li {
+  list-style-type: none;
+}

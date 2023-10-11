@@ -1,0 +1,77 @@
+// LIKE SHARE BUTTON Main news
+
+.main-news-like-share {
+  z-index: 3;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.main-news-like-share-background {
+  background-color: $bright-color;
+  border-radius: 20px 0 0 0;
+  min-width: 160px;
+  text-align: center;
+  padding: 10px 5px;
+  @media (max-width: 1200px) {
+    min-width: 130px;
+    padding: 5px 5px;
+  }
+  @media (max-width: 992px) {
+    min-width: 110px;
+    padding: 0 0 5px 0;
+  }
+  @media (max-width: 768px) {
+    min-width: 90px;
+    padding: 0 0 2px 0;
+  }
+}
+
+.main-news-icon {
+  padding: 0px 8px;
+  color: $like-share-color;
+  transition-duration: 0.2s;
+  @media (max-width: 1200px) {
+    font-size: 14px;
+  }
+  @media (max-width: 992px) {
+    font-size: 12px;
+    padding: 0px 5px;
+  }
+  @media (max-width: 768px) {
+    font-size: 10px;
+    padding: 0 3px;
+  }
+}
+
+// LIKE SHARE Category
+
+.category-like-share {
+  z-index: 3;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.category-like-share-background {
+  background-color: $bright-color;
+  border-radius: 15px 0 0 0;
+  min-width: 60px;
+  padding: 0px 10px 3px 10px;
+}
+.category-icon {
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  padding: 0px 3px;
+  font-size: 10px;
+  color: $like-share-color;
+  transition-duration: 0.2s;
+}
+
+// hovers
+
+.category-icon:hover,
+.main-news-icon:hover {
+  color: white;
+  cursor: pointer;
+}

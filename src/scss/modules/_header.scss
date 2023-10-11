@@ -1,0 +1,245 @@
+.header {
+  background-color: $bright-color;
+  padding: 25px 0 10px 0px;
+}
+
+.header-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 20px;
+}
+
+.header h1 {
+  display: block;
+  justify-content: left;
+}
+
+.header-logo img {
+  min-width: 150px;
+  max-width: 200px;
+}
+
+// main nav
+.header-main-nav nav {
+  color: $header-main-nav-color;
+  font-weight: 600;
+  font-size: 13px;
+  @media (max-width: 1200px) {
+    font-size: 13px;
+  }
+  @media (max-width: 992px) {
+    font-size: 12px;
+  }
+  @media (max-width: 768px) {
+    font-size: 10px;
+  }
+}
+
+.header-main-nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+}
+
+.header-main-nav li {
+  display: flex;
+  padding: 0 0 0 30px;
+  @media (max-width: 768px) {
+    padding: 0 0 0 20px;
+  }
+  @media (max-width: 510px) {
+    padding: 0 0 0 15px;
+  }
+}
+
+.header-main-nav-icon {
+  padding: 0 10px 0 0;
+  @media (max-width: 768px) {
+    padding: 0 5px 0 0;
+  }
+}
+
+.header-main-nav a {
+  transition-property: color;
+  transition-duration: 0.2s;
+}
+
+.header-main-nav a:hover {
+  color: white;
+}
+
+// secondary nav
+.header-secondary-nav {
+  font-size: 14px;
+  @media (max-width: 1200px) {
+    font-size: 13px;
+  }
+  @media (max-width: 992px) {
+    font-size: 12px;
+  }
+  @media (max-width: 768px) {
+    font-size: 10px;
+  }
+  font-weight: 600;
+  text-transform: uppercase;
+  transition-duration: 0.2s;
+  transition-property: color;
+}
+.header-secondary-nav a {
+  transition-duration: 0.2s;
+}
+.header-secondary-nav a:hover {
+  color: $body-background-color;
+}
+
+.header-secondary-nav ul {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.header-secondary-nav li {
+  padding: 0 35px 0 0;
+  display: flex;
+}
+
+.header-secondary-nav-search a {
+  color: $header-main-nav-color;
+  transition-property: color;
+  transition-duration: 0.2s;
+  @media (max-width: 1200px) {
+    font-size: 13px;
+  }
+  @media (max-width: 992px) {
+    font-size: 12px;
+  }
+  @media (max-width: 768px) {
+    font-size: 10px;
+  }
+}
+.header-secondary-nav-search a:hover {
+  color: white;
+}
+
+// more + third nav
+
+.header-more {
+  position: relative;
+  padding-left: 30px;
+  margin-top: -10px;
+  @media (min-width: 1400px) {
+    padding-left: 0;
+  }
+}
+
+.header-more-button {
+  border: none;
+  background: none;
+  @media (max-width: 1200px) {
+    font-size: 13px;
+  }
+  @media (max-width: 992px) {
+    font-size: 12px;
+  }
+  @media (max-width: 768px) {
+    font-size: 10px;
+  }
+  font-family: "Plus Jakarta Sans";
+  font-weight: 500;
+  position: relative;
+  z-index: 5;
+  text-transform: uppercase;
+}
+
+.header-more-button-arrow {
+  display: inline-block;
+  background: $bright-color;
+  padding: 7px 10px;
+  border-radius: 50px;
+  margin: 3px;
+  transition-property: color;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  transition: transform 0.2s, color 0.5s;
+}
+
+.header-more-button-arrow:hover {
+  color: white;
+}
+
+.header-more-button-arrow.open {
+  transform: rotate(-90deg);
+}
+
+.header-third-nav {
+  position: absolute;
+  top: 7px;
+  left: 45px;
+  @media (max-width: 1400px) {
+    left: 75px;
+  }
+  @media (max-width: 992px) {
+    left: 70px;
+  }
+  @media (max-width: 768px) {
+    left: 65px;
+  }
+  z-index: 4;
+}
+
+.header-third-nav ul {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  font-size: 11px;
+  letter-spacing: 0.87;
+  line-height: 31px;
+  font-weight: 400;
+  letter-spacing: 0.87px;
+  background: $header-third-nav-background-color;
+  border-radius: 25px;
+  padding: 15px 5px 15px 35px;
+  @media (max-width: 768px) {
+    line-height: 26px;
+    border-radius: 20px;
+    padding: 15px 5px 15px 30px;
+  }
+  @media (max-width: 1400px) {
+    font-size: 10px;
+  }
+  // toggle list
+  transition: height 0.3s, opacity 0.3s;
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+}
+
+.header-third-nav.is-open ul {
+  height: 216px;
+  opacity: 1;
+  @media (max-width: 768px) {
+    height: 186px;
+    width: 170px;
+  }
+}
+
+.header-third-nav li {
+  display: flex;
+  flex-direction: column;
+}
+
+.header-third-nav a:hover {
+  color: $bright-color;
+  font-weight: 500;
+  font-size: 10px;
+  text-transform: uppercase;
+  @media (max-width: 768px) {
+    font-size: 9px;
+  }
+}
+
+.header-third-nav a {
+  transition-property: color;
+  transition-duration: 0.1s;
+}
